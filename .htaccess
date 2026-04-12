@@ -1,0 +1,13 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule (^|/)\.(?!well-known/) - [F,L]
+    RewriteRule ^(?:config|controllers|core|models|views|vendor)/ - [F,L,NC]
+    RewriteRule ^(?:composer\.(?:json|lock)|database\.sql|routes\.php|\.env(?:\.local)?)$ - [F,L,NC]
+
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

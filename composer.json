@@ -1,0 +1,14 @@
+{
+    "name": "vegihub/marketplace",
+    "description": "Vegihub - Online Vegetable Marketplace",
+    "require": {
+        "php": ">=8.1",
+        "phpmailer/phpmailer": "^6.9",
+        "razorpay/razorpay": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "."
+        }
+    }
+}
