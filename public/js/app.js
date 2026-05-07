@@ -145,19 +145,21 @@ function initDealTimer() {
 }
 
 function initScrollAnimations() {
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    if (elements.length === 0) return;
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate-slideUp');
+                entry.target.classList.add('animate-active');
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
-    elements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
 }
 
 function initToasts() {

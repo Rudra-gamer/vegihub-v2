@@ -4,7 +4,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span>🌿</span> Vegi<span>hub</span>
+                        <span>🍃</span> Vegi<span>hub</span>
                     </div>
                     <p>Your trusted online marketplace for fresh vegetables, fruits, and herbs. We connect local farmers directly to your kitchen.</p>
                     <div class="social-links">
@@ -37,7 +37,7 @@
                     <ul>
                         <li><a href="mailto:rudranahak1000@gmail.com">📧 rudranahak1000@gmail.com</a></li>
                         <li><a href="tel:7064841325">📞 7064841325</a></li>
-                        <li><a href="#">📍 India</a></li>
+                        <li><a href="#">📍India</a></li>
                         <li><a href="#">⏰ Mon-Sat, 8AM-8PM</a></li>
                     </ul>
                 </div>
@@ -83,6 +83,7 @@
     </nav>
 
     <script src="<?= asset('js/app.js') ?>"></script>
+    <script src="<?= asset('js/chatbot.js') ?>"></script>
     <?php if (isset($extraJs)): foreach((array)$extraJs as $js): ?>
     <script src="<?= asset('js/' . $js) ?>"></script>
     <?php endforeach; endif; ?>

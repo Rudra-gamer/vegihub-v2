@@ -25,6 +25,7 @@ try {
     <?php endforeach; endif; ?>
     <link rel="stylesheet" href="<?= asset('css/modern.css') ?>">
     <link rel="stylesheet" href="<?= asset('css/responsive.css') ?>">
+    <link rel="stylesheet" href="<?= asset('css/chatbot.css') ?>">
 </head>
 <body>
     <!-- Toast Container -->
@@ -56,7 +57,7 @@ try {
                 </button>
 
                 <a href="<?= base_url() ?>" class="nav-logo">
-                    <span class="logo-icon">🌿</span>
+                    <span class="logo-icon">🍃</span>
                     Vegi<span>hub</span>
                 </a>
 

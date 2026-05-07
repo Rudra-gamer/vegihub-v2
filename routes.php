@@ -92,3 +92,4 @@ Router::group('admin', function() {
 Router::get('/api/products/search', 'ApiController@searchProducts');
 Router::get('/api/notifications', 'ApiController@getNotifications');
 Router::post('/api/notifications/read', 'ApiController@markNotificationRead');
+Router::post('/api/chatbot', 'ChatBotController@handle');
